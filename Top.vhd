@@ -101,5 +101,16 @@ begin
             Result => w_P32
         );
 
+--      FP : FP_divide 
+--        generic map (
+--            bits_wide => n
+--        )
+--        port map(
+--            CLK => CLK,
+--            A => w_A, 
+--            B => w_B,
+--            Result => w_P32
+--        );
+
             
 end architecture;
