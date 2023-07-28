@@ -8,6 +8,7 @@ This is a repository of floating-point combinational vhdl entities (using ieee_p
 | Subtract      | 827           | 0     | 25.312          | 96 |
 | Multiply      | 539           | 2     | 23.495          | 96 |
 | Divide        | 1564          | 0     | 95.01           | 96 |
+| Remainder     | 1505          | 0     | 87.44           | 96 |
 
 
 ## Testing Details
