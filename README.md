@@ -11,6 +11,7 @@ This is a repository of single-precision floating-point combinational vhdl entit
 | Remainder     | 32 | 1505           | 0     | 87.44           | 96 |
 | Modulo        | 32 | 2305           | 0     | 109.290         | 96 |
 | Reciprocal    | 32 | 2185           | 0     | 98.527          | 64 |
+| Dividebyp2    | 32 | 341            | 0     | 13.191          |128 |
 | Mac           | 32 | 1492           | 2     | 34.808          |128 |
 
 
