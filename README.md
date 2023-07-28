@@ -1,5 +1,5 @@
 # FloatingPoint_Combinational
-This is a repository of floating-point combinational vhdl entities (using ieee_proposed) 
+This is a repository of single-precision floating-point combinational vhdl entities (using ieee_proposed) 
 
 
 | Operation     | # LUTS        | DSP   | Max Delay (ns)  | IO |
@@ -15,3 +15,4 @@ This is a repository of floating-point combinational vhdl entities (using ieee_p
 + All synthesis was done using Vivado v2023.1
 + All implementation was tested using the Vivado Internal Logic Analyzer (ILA) and Virtual Input/Output (VIO) IP core on a Basys 3 board
 + All floating-point functions set to use their default parameters
+    + All operations were done using float32 numbers (single-precision) 
