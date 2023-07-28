@@ -10,6 +10,7 @@ This is a repository of single-precision floating-point combinational vhdl entit
 | Divide        | 32 | 1564           | 0     | 95.01           | 96 |
 | Remainder     | 32 | 1505           | 0     | 87.44           | 96 |
 | Modulo        | 32 | 2305           | 0     | 109.290         | 96 |
+| Reciprocal    | 32 | 2185           | 0     | 98.527          | 64 |
 
 
 ## Testing Details
