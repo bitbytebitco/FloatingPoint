@@ -14,3 +14,4 @@ This is a repository of floating-point combinational vhdl entities (using ieee_p
 ## Testing Details
 + All synthesis was done using Vivado v2023.1
 + All implementation was tested using the Vivado Internal Logic Analyzer (ILA) and Virtual Input/Output (VIO) IP core on a Basys 3 board
++ All floating-point functions set to use their default parameters
