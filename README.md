@@ -2,13 +2,13 @@
 This is a repository of single-precision floating-point combinational vhdl entities (using ieee_proposed) 
 
 
-| Operation     | # LUTS        | DSP   | Max Delay (ns)  | IO |
-| ------------- | ------------- | ----- | --------------- | -- | 
-| Add           | 775           | 0     | 25.431          | 96 |
-| Subtract      | 827           | 0     | 25.312          | 96 |
-| Multiply      | 539           | 2     | 23.495          | 96 |
-| Divide        | 1564          | 0     | 95.01           | 96 |
-| Remainder     | 1505          | 0     | 87.44           | 96 |
+| Operation     | N  | # LUTS         | DSP   | Max Delay (ns)  | IO |
+| ------------- | -- | -------------- | ----- | --------------- | -- | 
+| Add           | 32 | 775            | 0     | 25.431          | 96 |
+| Subtract      | 32 | 827            | 0     | 25.312          | 96 |
+| Multiply      | 32 | 539            | 2     | 23.495          | 96 |
+| Divide        | 32 | 1564           | 0     | 95.01           | 96 |
+| Remainder     | 32 | 1505           | 0     | 87.44           | 96 |
 
 
 ## Testing Details
