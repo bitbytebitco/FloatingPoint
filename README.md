@@ -19,9 +19,19 @@ This is a repository of single-precision floating-point combinational vhdl entit
 + All synthesis was done using Vivado v2023.1
 + All implementation was tested using the Vivado Internal Logic Analyzer (ILA) and Virtual Input/Output (VIO) IP core on a Basys 3 board
 + All floating-point functions set to use their default parameters
-    + All operations were done using float32 numbers (single-precision) 
+    + All operations were done using float32 numbers (single-precision)
+ 
+## File Details
++ **floating_point_[function].vhd**
+    + VHDL files with combinational logic
++ **Top.vhd**
+    + Top file for testing floating_point_[function].vhd with Virtual I/O stimulus
++ **accel_wrap.vhd**
+    + VHDL module for allowing use of floating_point_[function].vhd files as peripherals       
 
 ## Using the Floating-Point Module as a Perhipheral 
+**Click drop-down arrows below**
+
 <details>
   <summary>C-Language Example (Testing Multiply/Accumulate)</summary>
 
