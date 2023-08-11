@@ -7,7 +7,7 @@ use ieee_proposed.fixed_pkg.all;
 use ieee_proposed.float_pkg.all;
 
 
-entity FP_sub is 
+entity floating_point_multiply is 
     generic (
         bits_wide : integer := 32
     );
@@ -17,7 +17,7 @@ entity FP_sub is
          Result : out std_logic_vector((bits_wide-1) downto 0));
 end entity;
 
-architecture FP_sub_rtl of FP_sub is
+architecture floating_point_multiply_rtl of floating_point_multiply is
 
     begin
     
@@ -28,8 +28,7 @@ architecture FP_sub_rtl of FP_sub is
             f_A := to_float(A);
             f_B := to_float(B);
             
-            -- Perform the Addition using the add() function
-            f_R := subtract (l => f_A, r => f_B);
+            f_R := multiply (l => f_A, r => f_B);
 
   
             Result <= to_std_logic_vector(f_R);  

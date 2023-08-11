@@ -7,28 +7,27 @@ use ieee_proposed.fixed_pkg.all;
 use ieee_proposed.float_pkg.all;
 
 
-entity FP_dividebyp2 is 
+entity floating_point_reciprocal is 
     generic (
         bits_wide : integer := 32
     );
     port(
          CLK : std_logic;
-         A, B : in std_logic_vector((bits_wide-1) downto 0);
+         A : in std_logic_vector((bits_wide-1) downto 0);
          Result : out std_logic_vector((bits_wide-1) downto 0));
 end entity;
 
-architecture FP_dividebyp2_rtl of FP_dividebyp2 is
+architecture floating_point_reciprocal_rtl of floating_point_reciprocal is
 
     begin
     
-    FPADD: process(A, B)
-        variable  f_A, f_B, f_R : float32;
+    FPADD: process(A)
+        variable  f_A, f_R : float32;
         
         begin
             f_A := to_float(A);
-            f_B := to_float(B);
             
-            f_R := dividebyp2 (l => f_A, r => f_B);
+            f_R := reciprocal (arg => f_A);
 
   
             Result <= to_std_logic_vector(f_R);  

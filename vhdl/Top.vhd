@@ -30,7 +30,7 @@ architecture Top_rtl of Top is
     ATTRIBUTE MARK_DEBUG OF w_SEL : SIGNAL IS "true";
     ATTRIBUTE MARK_DEBUG OF w_P32 : SIGNAL IS "true";
       
-    component FP_multiply 
+    component floating_point_multiply 
         generic (
             bits_wide : integer := 32
         );
@@ -68,7 +68,7 @@ begin
 --    w_B <= i_B;
 --    o_R <= w_P32;
     
---    FP : FP_add 
+--    FP : floating_point_add 
 --        generic map (
 --            bits_wide => n
 --        )
@@ -79,7 +79,7 @@ begin
 --            Result => w_P32
 --        );
 
---      FP : FP_sub 
+--      FP : floating_point_sub 
 --        generic map (
 --            bits_wide => n
 --        )
@@ -90,7 +90,7 @@ begin
 --            Result => w_P32
 --        );
 
-      FP : FP_multiply 
+      FP : floating_point_multiply 
         generic map (
             bits_wide => n
         )
@@ -101,7 +101,7 @@ begin
             Result => w_P32
         );
 
---      FP : FP_divide 
+--      FP : floating_point_divide 
 --        generic map (
 --            bits_wide => n
 --        )

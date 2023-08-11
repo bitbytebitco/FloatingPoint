@@ -7,30 +7,29 @@ use ieee_proposed.fixed_pkg.all;
 use ieee_proposed.float_pkg.all;
 
 
-entity FP_mac is 
+entity floating_point_add is 
     generic (
         bits_wide : integer := 32
     );
     port(
          CLK : std_logic;
-         A, B, C: in std_logic_vector((bits_wide-1) downto 0);
+         A, B : in std_logic_vector((bits_wide-1) downto 0);
          Result : out std_logic_vector((bits_wide-1) downto 0));
 end entity;
 
-architecture FP_mac_rtl of FP_mac is
+architecture floating_point_add_rtl of floating_point_add is
 
     begin
     
     FPADD: process(A, B)
-        variable  f_A, f_B, f_C, f_R : float32;
+        variable  f_A, f_B, f_R : float32;
         
         begin
             f_A := to_float(A);
             f_B := to_float(B);
-            f_C := to_float(C);
             
-
-            f_R := mac (l => f_A, r => f_B, c => f_C);
+            -- Perform the Addition using the add() function
+            f_R := add (l => f_A, r => f_B);
 
   
             Result <= to_std_logic_vector(f_R);  

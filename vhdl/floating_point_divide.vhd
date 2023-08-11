@@ -7,7 +7,7 @@ use ieee_proposed.fixed_pkg.all;
 use ieee_proposed.float_pkg.all;
 
 
-entity FP_add is 
+entity floating_point_divide is 
     generic (
         bits_wide : integer := 32
     );
@@ -17,7 +17,7 @@ entity FP_add is
          Result : out std_logic_vector((bits_wide-1) downto 0));
 end entity;
 
-architecture FP_add_rtl of FP_add is
+architecture floating_point_divide_rtl of floating_point_divide is
 
     begin
     
@@ -29,7 +29,7 @@ architecture FP_add_rtl of FP_add is
             f_B := to_float(B);
             
             -- Perform the Addition using the add() function
-            f_R := add (l => f_A, r => f_B);
+            f_R := divide (l => f_A, r => f_B);
 
   
             Result <= to_std_logic_vector(f_R);  
