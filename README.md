@@ -1,5 +1,5 @@
-# FloatingPoint_Combinational
-This is a repository of single-precision floating-point combinational vhdl entities (using ieee_proposed) 
+# FloatingPoint
+This is a repository of single-precision floating-point combinational vhdl entities (using ieee_proposed) including a module (Finite State Machine with inputs and indicator flags) to employ the functions as peripherals. 
 
 
 | Operation     | N  | # LUTS         | DSP   | Max Delay (ns)  | IO |
